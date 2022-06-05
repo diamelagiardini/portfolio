@@ -1,3 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 
+.flex-end {
+  justify-content: flex-end;
+}
+
+.nav {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  justify-content: space-around;
+  background-color: #000000;
+  color: #e7e9ea;
+  font-family: "Amatic SC", cursive;
+}
+.nav .centrado {
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-datos {
+  border-bottom: 1px solid #e7e9ea;
+}
+
+.nav-links a {
+  margin-top: 30px;
+  padding-left: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid #e7e9ea;
+  color: #e7e9ea;
+}
+
+.nav-social {
+  margin: 30px;
+}
+.nav-social a {
+  text-decoration: none;
+  margin: 10px;
+  color: #e7e9ea;
+}
+
+.nav-contenedor {
+  margin: 15px;
+}
+.nav-contenedor .nombre-pequenio,
+.nav-contenedor .profesion-pequenio {
+  margin: 16px;
+}
+
+.seccion-principal {
+  background-image: url(./img/programming-wallpaper.jpg);
+  background-repeat: round;
+  min-height: 100vh;
+  margin-left: 250px;
+  color: #e7e9ea;
+  justify-content: space-between;
+}
+
+.modo-idioma div {
+  margin: 5px;
+}
+
+.presentacion-inicial {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  left: 160px;
+}
+.presentacion-inicial h3 {
+  font-size: 25px;
+  font-family: "BIZ UDMincho", serif;
+}
+.presentacion-inicial h1 {
+  font-size: 70px;
+  font-family: "Dancing Script", cursive;
+}
+.presentacion-inicial a {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #e7e9ea;
+  border-radius: 20px;
+  width: 130px;
+  background-color: #e7e9ea;
+  color: #000000;
+  font-family: "BIZ UDMincho", serif;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
