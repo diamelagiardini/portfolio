@@ -250,6 +250,72 @@ $color-secundario: #ad7e94;
   }
 }
 
+// ANIMACION GATITO DURMIENDO 
+.animacion-gatito{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.zzz {
+  animation-name: zzz;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+  color: $color-secundario;
+  font-weight: bold;
+  position: absolute;
+  z-index: 100;
+  transform: translateY(100%);
+  font-family: 'Concert One', cursive;
+}
+
+.zzz-z {
+  animation-delay: 0s;
+  right: 10px;
+}
+.zzz-zz {
+  animation-delay: 0.5s;
+  right: -20px;
+}
+.zzz-zzz {
+  animation-delay: 1s;
+  right: 0;
+}
+
+.animacion-gatito-durmiendo{
+  margin-right: 20px;
+}
+
+@-webkit-keyframes zzz {
+	0% {
+        color: rgba(160,84,246,0);
+        font-size: 30px;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        color: $color-secundario;
+        font-size: 72px;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes zzz {
+    0% {
+        color: rgba(160,84,246,0);
+        font-size: 30px;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+    100% {
+        color: $color-secundario;
+        font-size: 72px;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+}
+
 // RESPONSIVE
 
 // presentacion principal
