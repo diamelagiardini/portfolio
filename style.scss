@@ -12,7 +12,7 @@ $nav-contenedor-margen: 15px;
 $nav-color-fondo: #000000;
 $nav-color-letra: #e7e9ea;
 $nav-color-lineas: #e7e9ea;
-$color-secundario: #f7cae4;
+$color-secundario: #ad7e94;
 
 //MIXIN
 
@@ -41,6 +41,10 @@ $color-secundario: #f7cae4;
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.centrado {
+  @include centrado;
 }
 
 //CLASES DE TODOS LOS ELEMENTOS
@@ -91,11 +95,19 @@ $color-secundario: #f7cae4;
   }
 }
 
+.nav-social {
+  a:hover {
+    color: $color-secundario;
+    transition-duration: 0.8s;
+  }
+}
+
 .nav-contenedor {
   margin: $nav-contenedor-margen;
   .nombre-pequenio,
   .profesion-pequenio {
     margin: 16px;
+    font-size: 25px;
   }
 }
 
@@ -110,8 +122,58 @@ $color-secundario: #f7cae4;
 
 .modo-idioma {
   div {
-    margin: 5px;
+    margin-top: 10px;
+    width: 70px;
+    .fa-language {
+      font-size: 30px;
+      color: $color-secundario;
+    }
   }
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggler {
+  display: block;
+  width: 60px;
+  height: 31px;
+  border: 2px solid $color-secundario;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.bolilla,
+.fa-moon,
+.fa-sun {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bolilla {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: $color-secundario;
+  border-radius: 50%;
+  left: 1px;
+  z-index: 10;
+  transition: transform 0.5s ease-in-out;
+}
+
+.fa-moon {
+  left: 5px;
+}
+
+.fa-sun {
+  right: 5px;
+}
+
+#checkbox:checked + .bolilla {
+  transform: translate(29px, -50%);
 }
 
 .presentacion-inicial {
@@ -174,5 +236,49 @@ $color-secundario: #f7cae4;
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+.animacion {
+  div {
+    .fa-arrow-down {
+      margin: 20px;
+      font-size: 30px;
+      display: inline-block;
+      animation: float 5s ease-in-out infinite;
+    }
+  }
+}
+
+// RESPONSIVE
+
+// presentacion principal
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .seccion-principal {
+    margin: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .presentacion-inicial {
+    margin-left: 20px;
+    padding: 20px;
+    h1 {
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+
+    a {
+      padding: 8px;
+      width: 100px;
+      font-size: 16px;
+    }
   }
 }

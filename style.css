@@ -20,6 +20,11 @@
   justify-content: flex-end;
 }
 
+.centrado {
+  justify-content: center;
+  align-items: center;
+}
+
 .nav {
   width: 250px;
   height: 100%;
@@ -49,8 +54,8 @@
 
 .nav-links a:hover {
   transform: translateY(5px);
-  color: #f7cae4;
-  border-bottom: 1px solid #f7cae4;
+  color: #ad7e94;
+  border-bottom: 1px solid #ad7e94;
 }
 
 .nav-social {
@@ -62,12 +67,18 @@
   color: #e7e9ea;
 }
 
+.nav-social a:hover {
+  color: #ad7e94;
+  transition-duration: 0.8s;
+}
+
 .nav-contenedor {
   margin: 15px;
 }
 .nav-contenedor .nombre-pequenio,
 .nav-contenedor .profesion-pequenio {
   margin: 16px;
+  font-size: 25px;
 }
 
 .seccion-principal {
@@ -80,7 +91,57 @@
 }
 
 .modo-idioma div {
-  margin: 5px;
+  margin-top: 10px;
+  width: 70px;
+}
+.modo-idioma div .fa-language {
+  font-size: 30px;
+  color: #ad7e94;
+}
+
+#checkbox {
+  display: none;
+}
+
+.toggler {
+  display: block;
+  width: 60px;
+  height: 31px;
+  border: 2px solid #ad7e94;
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.bolilla,
+.fa-moon,
+.fa-sun {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.bolilla {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #ad7e94;
+  border-radius: 50%;
+  left: 1px;
+  z-index: 10;
+  transition: transform 0.5s ease-in-out;
+}
+
+.fa-moon {
+  left: 5px;
+}
+
+.fa-sun {
+  right: 5px;
+}
+
+#checkbox:checked + .bolilla {
+  transform: translate(29px, -50%);
 }
 
 .presentacion-inicial {
@@ -96,7 +157,7 @@
 .presentacion-inicial h1 {
   font-size: 70px;
   font-family: "Dancing Script", cursive;
-  color: #f7cae4;
+  color: #ad7e94;
 }
 .presentacion-inicial a {
   padding: 10px;
@@ -112,7 +173,7 @@
 }
 
 .presentacion-inicial a:hover {
-  background-color: #f7cae4;
+  background-color: #ad7e94;
   cursor: pointer;
 }
 
@@ -139,6 +200,39 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+.animacion div .fa-arrow-down {
+  margin: 20px;
+  font-size: 30px;
+  display: inline-block;
+  animation: float 5s ease-in-out infinite;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .seccion-principal {
+    margin: 0;
+  }
+}
+@media (max-width: 750px) {
+  .presentacion-inicial {
+    margin-left: 20px;
+    padding: 20px;
+  }
+  .presentacion-inicial h1 {
+    font-size: 60px;
+  }
+  .presentacion-inicial h3 {
+    font-size: 20px;
+  }
+  .presentacion-inicial a {
+    padding: 8px;
+    width: 100px;
+    font-size: 16px;
   }
 }
 
