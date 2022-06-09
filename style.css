@@ -221,7 +221,6 @@
   animation-iteration-count: infinite;
   animation-direction: forwards;
   color: #ad7e94;
-  font-weight: bold;
   position: absolute;
   z-index: 100;
   transform: translateY(100%);
@@ -230,21 +229,17 @@
 
 .zzz-z {
   animation-delay: 0s;
-  right: 10px;
+  right: 60px;
 }
 
 .zzz-zz {
   animation-delay: 0.5s;
-  right: -20px;
+  right: 38px;
 }
 
 .zzz-zzz {
   animation-delay: 1s;
-  right: 0;
-}
-
-.animacion-gatito-durmiendo {
-  margin-right: 20px;
+  right: 30px;
 }
 
 @-webkit-keyframes zzz {
