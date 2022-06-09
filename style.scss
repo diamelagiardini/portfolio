@@ -216,7 +216,7 @@ $color-secundario: #ad7e94;
 .redes {
   display: inline-block;
   animation: float 5s ease-in-out infinite;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .linkedin {
@@ -250,8 +250,8 @@ $color-secundario: #ad7e94;
   }
 }
 
-// ANIMACION GATITO DURMIENDO 
-.animacion-gatito{
+// ANIMACION GATITO DURMIENDO
+.animacion-gatito {
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -265,7 +265,7 @@ $color-secundario: #ad7e94;
   position: absolute;
   z-index: 100;
   transform: translateY(100%);
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
 }
 
 .zzz-z {
@@ -282,33 +282,37 @@ $color-secundario: #ad7e94;
 }
 
 @-webkit-keyframes zzz {
-	0% {
-        color: rgba(160,84,246,0);
-        font-size: 30px;
-        -webkit-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-    100% {
-        color: $color-secundario;
-        font-size: 72px;
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-    }
+  0% {
+    color: rgba(160, 84, 246, 0);
+    font-size: 30px;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100% {
+    color: $color-secundario;
+    font-size: 72px;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
 }
 
 @keyframes zzz {
-    0% {
-        color: rgba(160,84,246,0);
-        font-size: 30px;
-        -webkit-transform: translateY(100%);
-        transform: translateY(100%);
-    }
-    100% {
-        color: $color-secundario;
-        font-size: 72px;
-        -webkit-transform: translateY(-100%);
-        transform: translateY(-100%);
-    }
+  0% {
+    color: rgba(160, 84, 246, 0);
+    font-size: 30px;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100% {
+    color: $color-secundario;
+    font-size: 72px;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+}
+
+.footer {
+  display: none;
 }
 
 // RESPONSIVE
@@ -322,6 +326,30 @@ $color-secundario: #ad7e94;
 
   .seccion-principal {
     margin: 0;
+  }
+
+  .footer {
+    @include flex-row;
+    @include centrado;
+    background-color: $nav-color-fondo;
+    height: 120px;
+    div {
+      a {
+        color: $nav-color-letra;
+        margin: 15px;
+        font-size: 35px;
+      }
+    }
+  }
+
+  .footer {
+    div {
+      a:hover {
+        color: $color-secundario;
+        cursor: pointer;
+        transition-duration: 0.8s;
+      }
+    }
   }
 }
 
