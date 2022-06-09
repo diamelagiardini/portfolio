@@ -340,13 +340,11 @@ section {
 }
 
 .contenedor-proyectos {
-  width: 510px;
+  width: 660px;
   div {
     img {
       width: 100%;
-      height: 117px;
-      border: 2px solid #e7e9ea;
-      border-radius: 10px;
+      height: 180px;
     }
     p {
       text-align: center;
@@ -354,18 +352,9 @@ section {
   }
 }
 
-.contenedor-proyectos {
-  div {
-    img:hover {
-      box-shadow: #e7e9ea 0px 0px 6px;
-      transform: translateY(-10px);
-    }
-  }
-}
-
 .contenedor-proyecto {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin: 10px;
 }
 
@@ -393,6 +382,7 @@ section {
 
   .contenedor-proyectos {
     width: 510px;
+    @include centrado;
   }
 
   .footer {
