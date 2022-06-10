@@ -356,6 +356,15 @@ section {
   width: 200px;
   height: 200px;
   margin: 10px;
+  img {
+    transition: 1.5s;
+  }
+}
+
+.contenedor-proyecto {
+  img:hover {
+    transform: translateY(-10px);
+  }
 }
 
 .footer {
@@ -383,6 +392,10 @@ section {
   .contenedor-proyectos {
     width: 510px;
     @include centrado;
+    a {
+      text-decoration: none;
+      color: $nav-color-letra;
+    }
   }
 
   .footer {

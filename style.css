@@ -308,6 +308,13 @@ section {
   height: 200px;
   margin: 10px;
 }
+.contenedor-proyecto img {
+  transition: 1.5s;
+}
+
+.contenedor-proyecto img:hover {
+  transform: translateY(-10px);
+}
 
 .footer {
   display: none;
@@ -331,6 +338,10 @@ section {
     width: 510px;
     justify-content: center;
     align-items: center;
+  }
+  .contenedor-proyectos a {
+    text-decoration: none;
+    color: #e7e9ea;
   }
 
   .footer {
